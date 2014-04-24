@@ -9,6 +9,10 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="stylesheets/fd-slider.custom.css" />
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="stylesheets/demo.css" />
+    <script src="javascripts/fd-slider.min.js"></script>
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -34,9 +38,9 @@
                         <h2>Keyboard Controls</h2>
                         <!--
 
-            The following paragraph is used to set the ARIA describedby property
+                        The following paragraph is used to set the ARIA describedby property
 
-            -->
+                        -->
                         <p id="fd-slider-describedby">Whenever a slider has focus, the keys <kbd title="Left arrow key">&larr;</kbd>, <kbd title="Right arrow key">&rarr;</kbd>, <kbd title="Up arrow key">&uarr;</kbd>, <kbd title="Down arrow key">&darr;</kbd>, <kbd title="Insert key">Ins</kbd> and <kbd title="Delete key">Del</kbd> can be used to control the slider handle (pressing either the <kbd>Page up</kbd> or <kbd>Page down</kbd> keys or <kbd title="CTRL key">CTRL</kbd> and an arrow key will move the handle by two steps at a time), the <kbd title="Home key">Home</kbd> key to set the slider at the minimum value and the <kbd title="End key">End</kbd> key to set the slider at the maximum value.</p>
                         <h2>Mixed HTML5 Polyfill &amp; Javascript API Creation Demos</h2>
                         <h3>&#8230;as usual, &#8220;View Source&#8221; is your friend</h3>
@@ -47,15 +51,15 @@
                             <p>See the <a href="./yepnope/">Modernizr/yepnope</a> demo for a better example on how to include the CSS and JS files when using the polyfill.</p>
                             <!--
 
-                Sliders #1, #2 #3 & #4 created automatically by the script on page load
-                only if the browser does not support type="range".
+                            Sliders #1, #2 #3 & #4 created automatically by the script on page load
+                            only if the browser does not support type="range".
 
-                The script will use the "min", "max" and "step" attributes assigned to the
-                input to create the slider with the appropriate scale.
+                            The script will use the "min", "max" and "step" attributes assigned to the
+                            input to create the slider with the appropriate scale.
 
-                Slider #1: "min", "max" & "step" attributes given
+                            Slider #1: "min", "max" & "step" attributes given
 
-                -->
+                            -->
                             <pre><code>&lt;input type="range"
        name="html5shim-1"
        id="html5shim-1"
@@ -73,13 +77,13 @@
                             </p>
                             <!--
 
-                Slider #2: No "min" or "max" attributes given (they default to 0 and 100
-                respectivey) but the required "step" attribute set to "1".
+                            Slider #2: No "min" or "max" attributes given (they default to 0 and 100
+                            respectivey) but the required "step" attribute set to "1".
 
-                Additionally, an onchange event has been set to test if the script honours
-                HTML events set on the original Input.
+                            Additionally, an onchange event has been set to test if the script honours
+                            HTML events set on the original Input.
 
-                -->
+                            -->
                             <p>The following Input has an <code>onchange</code> event that updates the value of a <code>span</code> positioned within the associated <code>label</code>.</p>
                             <pre><code>&lt;input type="range"
        name="html5shim-2"
@@ -102,13 +106,13 @@
                             </script>
                             <!--
 
-                Slider #3: The input element has been given the "data-fd-slider-vertical"
-                custom data- attribute which makes the script create a vertical slider.
-                Additionally, the value of this attribute is given to the slider as a
-                classname - in this case, the class "v-s" which makes the slider inherit
-                a height of 300px.
+                            Slider #3: The input element has been given the "data-fd-slider-vertical"
+                            custom data- attribute which makes the script create a vertical slider.
+                            Additionally, the value of this attribute is given to the slider as a
+                            classname - in this case, the class "v-s" which makes the slider inherit
+                            a height of 300px.
 
-                -->
+                            -->
                             <p>
                                 The following input element has been assigned a custom data- attribute named <code>data-fd-slider-vertical</code> which tells the script to create a vertical slider.
                                 Additionally, the value of the <code>data-fd-slider-vertical</code> attribute, in this case &#8220;v-s&#8221;, is added as a classname to the associated slider &ndash; this enables you set the slider height using a CSS classname (which, in this case, sets a height of 300 pixels).
@@ -132,11 +136,11 @@
                             </p>
                             <!--
 
-                Slider #4: CSS has been used to make the following input element 400
-                pixels in height and 20 pixels wide, which instructs the script to
-                automatically create a vertical slider.
+                            Slider #4: CSS has been used to make the following input element 400
+                            pixels in height and 20 pixels wide, which instructs the script to
+                            automatically create a vertical slider.
 
-                -->
+                            -->
                             <p>CSS has been used to make the following input element 400 pixels in height and 20 pixels wide, which instructs the script to create a vertical slider.</p>
                             <pre><code>&lt;input type="range" 
        name="html5shim-4" 
@@ -156,10 +160,10 @@
                         </fieldset>
                         <!--
 
-            Sliders created using the Javascript API from here on in i.e. no more HTML5
-            range polyfills from this point on.
+                        Sliders created using the Javascript API from here on in i.e. no more HTML5
+                        range polyfills from this point on.
 
-            -->
+                        -->
                         <fieldset>
                             <legend>Javascript initialisation tests</legend>
                             <p>The first three sliders show the three different &#8220;handle to clickpoint&#8221; animation styles: <em>timed</em>, <em>jump</em> <span class="amp">&</span> <em>tween</em> respectively. Additionally, the third slider has the &#8220;forceValue&#8221; parameter set to TRUE.</p>
@@ -167,9 +171,9 @@
                             <p>
                                 <!--
 
-                    Here's the form element we will associate the first slider with.
+                                Here's the form element we will associate the first slider with.
 
-                    -->
+                                -->
                                 <input name="inputTest3" id="inputTest3" type="text" title="Range: -10 to 10 in steps of 0.5" value="" maxlength="6" />
                                 <a href="#" onclick="fdSlider.disable('inputTest3'); return false;">Disable</a>
                                 <a href="#" onclick="fdSlider.enable('inputTest3'); return false;">Enable</a>
@@ -198,9 +202,9 @@
                             <p>
                                 <!--
 
-                    Here's the form element we will associate the second slider with.
+                                Here's the form element we will associate the second slider with.
 
-                    -->
+                                -->
                                 <input name="inputTest5" id="inputTest5" type="text" title="Range: 5 to 15 in steps of 0.2 with a (50:13) scale" value="" maxlength="6" />
                             </p>
                             <script>
@@ -230,9 +234,9 @@
                             <p>
                                 <!--
 
-                    Here's the form element we will associate the third slider with.
+                                Here's the form element we will associate the third slider with.
 
-                    -->
+                                -->
                                 <input name="inputTest6" id="inputTest6" type="text" title="Range: 5 to 15 in steps of 0.2" value="" maxlength="6" />
                             </p>
                             <script>
@@ -258,10 +262,10 @@
                             <p>
                                 <!--
 
-                    Here's the form element - a select list in this case - that we will
-                    associate the forth and final slider with.
+                                Here's the form element - a select list in this case - that we will
+                                associate the forth and final slider with.
 
-                    -->
+                                -->
                                 <select name="selectTest1" id="selectTest1">
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
