@@ -16,10 +16,10 @@ h2. At a glance
 
 h2. Quick Demos 
 
-* "Mixed HTML5 polyfill and Javascript API demo":http://www.frequency-decoder.com/demo/fd-slider/
-* "Using yepnope and Modernizr to load dependencies only when required for HTML5 polyfills":http://www.frequency-decoder.com/demo/fd-slider/yepnope/
-* "CSS generated content tooltip extension":http://www.frequency-decoder.com/demo/fd-slider/tooltip/
+* "Mixed HTML5 polyfill and Javascript API demo":
+* "Using yepnope and Modernizr to load dependencies only when required for HTML5 polyfills":
+* "CSS generated content tooltip extension":
 
 h2. More Information
 
-More information can be found within an "associated blog post":http://www.frequency-decoder.com/2010/11/18/unobtrusive-slider-control-html5-input-range-polyfill/
+More information can be found within an "associated blog post":
